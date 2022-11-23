@@ -4,98 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title>Character</title>
 </head>
 <body>
     <form>
-        <div>
-            <div>
+        <div class="container">
+            <div class="inv-container">
                 <h1>Investigator</h1>
                 <div>
                     <label for="Name">Name</label>
-                    <input type="text" name="Name" required>
+                    <input type="text" name="Name" id="name" required>
                 </div>
                 <div>
                     <label for="Occupation">Occupation</label>
-                    <input type="text" name="Occupation">
+                    <input type="text" name="Occupation" id="occupation" required>
                 </div>
                 <div>
                     <label for="Age">Age</label>
-                    <input type="number" name="Age">
+                    <input type="number" name="Age" id="age" required>
                 </div>
             </div>
-            <div>
+            <div class="char-container">
                 <h2>Characteristics</h2>
-                <div>
-                    <label for="STR">STR</label>
-                    <input type="number" name="STR">
-                    <div>
-                        <input type="number">
-                        <input type="number">
+                <div class="char-subcontainer">
+                    <div class="char">
+                        <div>
+                            <label for="STR" class="char__lab">STR</label>
+                            <input type="number" name="STR" class="char__major">
+                        </div>
+                        <div class="char__minor">
+                            <input type="number" class="char__minor__half">
+                            <input type="number" class="char__minor__fifth">
+                        </div>
+                    </div>
+                    <div class="char">
+                        <div>
+                            <label for="CON" class="char__lab">CON</label>
+                            <input type="number" name="CON" class="char__major">
+                        </div>
+                        <div class="char__minor">
+                            <input type="number" class="char__minor__half">
+                            <input type="number" class="char__minor__fifth">
+                        </div>
+                    </div>
+                    <div class="char">
+                        <div>
+                            <label for="SIZ" class="char__lab">SIZ</label>
+                            <input type="number" name="SIZ" class="char__major">
+                        </div>
+                        <div class="char__minor">
+                            <input type="number" class="char__minor__half">
+                            <input type="number" class="char__minor__fifth">
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <label for="CON">CON</label>
-                    <input type="number" name="CON">
-                    <div>
-                        <input type="number">
-                        <input type="number">
+                <div class="char-subcontainer">
+                    <div class="char">
+                        <div>
+                            <label for="DEX" class="char__lab">DEX</label>
+                            <input type="number" name="DEX" class="char__major">
+                        </div>
+                        <div class="char__minor">
+                            <input type="number" class="char__minor__half">
+                            <input type="number" class="char__minor__fifth">
+                        </div>
+                    </div>
+                    <div class="char">
+                        <div>
+                            <label for="APP" class="char__lab">APP</label>
+                            <input type="number" name="APP" class="char__major">
+                        </div>
+                        <div class="char__minor">
+                            <input type="number" class="char__minor__half">
+                            <input type="number" class="char__minor__fifth">
+                        </div>
+                    </div>
+                    <div class="char">
+                        <div>
+                            <label for="INT" class="char__lab">INT</label>
+                            <input type="number" name="INT" class="char__major">
+                        </div>
+                        <div class="char__minor">
+                            <input type="number" class="char__minor__half">
+                            <input type="number" class="char__minor__fifth">
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <label for="SIZ">SIZ</label>
-                    <input type="number" name="SIZ">
-                    <div>
-                        <input type="number">
-                        <input type="number">
+                <div class="char-subcontainer">
+                    <div class="char">
+                        <div>
+                            <label for="POW" class="char__lab">POW</label>
+                            <input type="number" name="POW" class="char__major">
+                        </div>
+                        <div class="char__minor">
+                            <input type="number" class="char__minor__half">
+                            <input type="number" class="char__minor__fifth">
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <label for="DEX">DEX</label>
-                    <input type="number" name="DEX">
-                    <div>
-                        <input type="number">
-                        <input type="number">
-                    </div>
-                </div>
-                <div>
-                    <label for="APP">APP</label>
-                    <input type="number" name="APP">
-                    <div>
-                        <input type="number">
-                        <input type="number">
-                    </div>
-                </div>
-                <div>
-                    <label for="INT">INT</label>
-                    <input type="number" name="INT">
-                    <div>
-                        <input type="number">
-                        <input type="number">
-                    </div>
-                </div>
-                <div>
-                    <label for="POW">POW</label>
-                    <input type="number" name="POW">
-                    <div>
-                        <input type="number">
-                        <input type="number">
-                    </div>
-                </div>
-                <div>
-                    <label for="EDU">EDU</label>
-                    <input type="number" name="EDU">
-                    <div>
-                        <input type="number">
-                        <input type="number">
+                    <div class="char">
+                        <div>
+                            <label for="EDU" class="char__lab">EDU</label>
+                            <input type="number" name="EDU" class="char__major">
+                        </div>
+                        <div class="char__minor">
+                            <input type="number" class="char__minor__half">
+                            <input type="number" class="char__minor__fifth">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="img-container">
                 <img>
             </div>
         </div>
-        <div>
+        <div class="Att-container">
             <h2>Attributes</h2>
             <div>
                 <div>

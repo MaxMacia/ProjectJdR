@@ -1,0 +1,78 @@
+@import "./utils/variables";
+
+@import "./layout/general-elements";
+
+form {
+    border: 1px solid $black-color;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    .inv-container {
+        border: 1px solid $black-color;
+        font-size: 1em;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h1 {
+            font-size: 1.5em;
+            display: block;
+            width: 100%;
+            background-color: $black-color;
+            color: $white-color;
+        }
+        #occupation {
+            width: 147px;
+        }
+        #age {
+            width: 194px;
+        }
+    }
+    .char-container {
+        border: 1px solid $black-color;
+        font-size: 1em;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        .char-subcontainer {
+            display: flex;
+        }
+    }
+    .img-container {
+        border: 1px solid $black-color;
+        font-size: 1em;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.char {
+    display: flex;
+    .char__major {
+        width: 15px;
+        height: 20px;
+    }
+    .char__minor{
+        display: flex;
+        flex-direction: column;
+        .char__minor__half {
+            width: 7.5px;
+            height: 7.5px;
+        }
+        .char__minor__fifth {
+            width: 7.5px;
+            height: 7.5px;
+        }
+    }
+
+}
